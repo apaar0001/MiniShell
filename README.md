@@ -1,6 +1,6 @@
 # <p align="center">
 
-  <img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/terminal.svg" width="80"/>
+  <img src="./png-transparent-bash-shell-command-line-interface-ls-shell-rectangle-logo-sticker.png" width="120"/>
 </p>
 
 <h1 align="center">MiniShell</h1>
@@ -47,15 +47,6 @@
 
 ---
 
-## 🖼️ Screenshots
-
-> **Tip:** Replace the below placeholders with your own screenshots for a more personalized README!
-
-| Shell Prompt Example                                                  | Command History Example                                             |
-| --------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| ![Shell Prompt](https://via.placeholder.com/350x80?text=Shell+Prompt) | ![History](https://via.placeholder.com/350x80?text=Command+History) |
-
----
 
 ## 🏗️ Architecture
 
