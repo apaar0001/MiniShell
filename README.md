@@ -1,6 +1,6 @@
 # <p align="center">
 
-  <img src="./png-transparent-bash-shell-command-line-interface-ls-shell-rectangle-logo-sticker.png" width="120"/>
+  <img src="./png-transparent-bash-shell-command-line-interface-ls-shell-rectangle-logo-sticker-removebg-preview.png" width="120"/>
 </p>
 
 <h1 align="center">MiniShell</h1>
