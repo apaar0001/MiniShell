@@ -1,48 +1,111 @@
-# MiniShell
+# <img src="https://img.icons8.com/ios-filled/50/000000/terminal-2.png" width="36"/> MiniShell
 
-A lightweight UNIX-style shell implementation that supports basic shell functionality including command execution, I/O redirection, piping, and built-in commands.
+<p align="center">
+  <img src="https://img.icons8.com/ios-filled/100/000000/console.png" width="100"/>
+</p>
 
-## Features
+<p align="center">
+  <b>A lightweight UNIX-style shell implementation in C</b><br/>
+  <i>Supports command execution, I/O redirection, piping, history, and more!</i>
+</p>
 
-- Command execution (both built-in and external commands)
-- I/O redirection (`>`, `>>`, `<`)
-- Command history
-- Background process execution
-- Signal handling (SIGINT, SIGTSTP)
-- Built-in commands:
-  - `cd`: Change directory
-  - `exit`: Exit the shell
-  - `pwd`: Print working directory
-  - `echo`: Print arguments
-  - `history`: Show command history
+<p align="center">
+  <img src="https://img.shields.io/badge/build-passing-brightgreen"/>
+  <img src="https://img.shields.io/badge/license-MIT-blue"/>
+  <img src="https://img.shields.io/badge/language-C-blue"/>
+</p>
 
-## Requirements
+---
+
+## 📑 Table of Contents
+
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Architecture](#architecture)
+- [Requirements](#requirements)
+- [Building](#building)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Cleanup](#cleanup)
+- [License](#license)
+
+---
+
+## ✨ Features
+
+| Feature              | Description                                          |
+| -------------------- | ---------------------------------------------------- |
+| Command Execution    | Run both built-in and external commands              |
+| I/O Redirection      | Supports `>`, `>>`, `<` for output/input redirection |
+| Command History      | Recall and reuse previous commands                   |
+| Background Execution | Run processes in the background using `&`            |
+| Signal Handling      | Handles `SIGINT` (Ctrl+C), `SIGTSTP` (Ctrl+Z)        |
+| Built-in Commands    | `cd`, `exit`, `pwd`, `echo`, `history`               |
+
+---
+
+## 🖼️ Screenshots
+
+> **Tip:** Replace the below placeholders with your own screenshots for a more personalized README!
+
+| Shell Prompt Example                                                  | Command History Example                                             |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| ![Shell Prompt](https://via.placeholder.com/350x80?text=Shell+Prompt) | ![History](https://via.placeholder.com/350x80?text=Command+History) |
+
+---
+
+## 🏗️ Architecture
+
+```mermaid
+graph TD;
+    A[User Input] --> B[Parser];
+    B --> C{Built-in?};
+    C -- Yes --> D[Execute Built-in];
+    C -- No --> E[Launch External Command];
+    E --> F[Handle I/O Redirection];
+    F --> G[Execute];
+    G --> H[Display Output];
+    D --> H;
+```
+
+---
+
+## ⚙️ Requirements
 
 - GCC compiler
 - GNU Readline library
 - Make
 
-## Building
+---
 
-To build the project, simply run:
+## 🛠️ Building
+
+Clone the repository and build the project:
 
 ```bash
+git clone <repo-url>
+cd minishell
 make
 ```
 
-This will create a `bin` directory containing the `minishell` executable.
+This will create a `minishell` executable in the project directory.
 
-## Usage
+---
+
+## 🚀 Usage
 
 Run the shell:
 
 ```bash
-./bin/minishell
+./minishell
 ```
 
-The shell will display a prompt showing the current working directory. You can enter commands just like in a regular shell.
+- The shell displays a prompt with the current working directory.
+- Enter commands as you would in a standard UNIX shell.
 
-## Examples
+---
+
+## 💡 Examples
 
 ```bash
 # List files
@@ -64,14 +127,22 @@ sleep 10 &
 history
 ```
 
-## Cleanup
+---
 
-To clean up build artifacts:
+## 🧹 Cleanup
+
+To remove build artifacts:
 
 ```bash
 make clean
 ```
 
-## License
+---
+
+## 📄 License
 
 This project is open source and available under the MIT License.
+
+---
+
+> **Note:** For more details, see the source code and comments within each file.
