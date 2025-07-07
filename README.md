@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./png-transparent-bash-shell-command-line-interface-ls-shell-rectangle-logo-sticker-removebg-preview." width="120"/>
+  <img src="./png-transparent-bash-shell-command-line-interface-ls-shell-rectangle-logo-sticker-removebg-preview.png" width="120"/>
 </div>
 
 <h1 align="center">MiniShell</h1>
